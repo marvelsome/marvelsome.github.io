@@ -1,2 +1,0 @@
-# marvelsome.github.io
-blog
