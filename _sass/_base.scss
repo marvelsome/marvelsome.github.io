@@ -81,7 +81,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
-    font-weight: $base-font-weight;
+    font-weight: $font-weight-bold;
 }
 
 
@@ -110,10 +110,10 @@ a {
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    border-left: $base-font-size/4 solid $grey-color-light;
+    padding-left: $spacing-unit/2;
+    font-size: $base-font-size;
+    letter-spacing: 0;
     font-style: italic;
 
     > :last-child {
@@ -128,18 +128,18 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: $base-font-size*.9;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
+    border-radius: $base-font-size/4;
     background-color: #eef;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 1px $base-font-size/4;
 }
 
 pre {
-    padding: 8px 12px;
+    padding: $base-font-size/2 $base-font-size*.75;
     overflow-x: scroll;
 
     > code {
@@ -194,8 +194,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: $base-font-size;
+        height: $base-font-size;
         vertical-align: middle;
 
         path {
